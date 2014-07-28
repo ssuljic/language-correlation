@@ -9,7 +9,7 @@ def index(request, template):
 	languages = []
 	
 	data = csv.reader(
-		open('language_correlation/static/languages.csv', 'rb'), 
+		open('languagecorrelation/static/languages.csv', 'rb'), 
 		delimiter=','
 	);
 
@@ -32,7 +32,7 @@ def data(request):
 	languages_correaltion['children'] = []
 	
 	data = csv.reader(
-		open('language_correlation/static/language_correlation.csv', 'rb'), 
+		open('languagecorrelation/static/language_correlation.csv', 'rb'), 
 		delimiter=','
 	);
 
