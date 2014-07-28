@@ -1,0 +1,35 @@
+<!;DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Programming Languages Data Visualisation</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+  <div id="content">
+    <h1>Language Correlation</h1>
+    <p>
+      Choose a programming language and see which other languages
+      are popular amongst the particular programming language community
+      according to github data.
+    </p>
+    <select class="form-control" id="lang-select">
+      {% for lang in languages %}
+        <option>{{ lang }}</option>
+      {% endfor %}
+    </select>
+    <div id="links">
+      <a href="http://127.0.0.1:8000" class="twitter-share-button" data-lang="en" data-text="See which languages are popular amongst a specific programming language community">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <a href="" target="_blank" id="github-link">
+        <img src="/static/img/PNG/GitHub-Mark-Light-120px-plus.png" style="width:20px"> github
+      </a>
+    </div>
+  </div>
+  <div id="chart"></div>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="static/js/main.js"></script>
+</body>
+</html>

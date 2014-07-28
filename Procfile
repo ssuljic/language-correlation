@@ -1,0 +1,1 @@
+web: gunicorn languagecorrelation.wsgi --log-file -

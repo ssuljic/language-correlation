@@ -1,0 +1,39 @@
+text {
+  font: 10px sans-serif;
+}
+body {
+  background: url('/static/img/background.jpg');
+  background-size: cover;
+}
+#content {
+  padding-top: 200px;
+  float: left;
+  width: 30%;
+  margin-left: 10%;
+  display: inline;
+}
+#content p {
+  color: white;
+  text-align: justify;
+}
+#chart {
+  float: right;
+  display: inline;
+  margin-right: 5%;
+}
+h1 {
+  color: white;
+}
+.bubble {
+  padding-left: 100px;
+}
+#github-link {
+  color: white;
+  position: absolute;
+}
+#github-link:hover {
+  text-decoration: none;
+}
+#lang-select {
+  margin-bottom: 10px;
+}
