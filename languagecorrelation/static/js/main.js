@@ -16,11 +16,8 @@ function getData(lang) {
   if(lang === undefined) {
     lang = 'ASP'
   }
-  console.log(lang)
   $.getJSON('/data?lang=' + encodeURIComponent(lang), function(data) {
-    console.log(data)
     root = data;
-    console.log(root)
     var node = svg.selectAll(".node")
         .data(bubble.nodes(classes(root))
         .filter(function(d) { return !d.children; }))
