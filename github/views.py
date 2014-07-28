@@ -31,6 +31,11 @@ def data(request):
 	languages_correaltion['name'] = 'data'
 	languages_correaltion['children'] = []
 	
+	"""
+		Data collected via Google Big Query and Github Archive by running the following query:
+		SELECT * FROM [githubarchive:github.language_correlation] ORDER BY correlation;
+	"""
+	
 	data = csv.reader(
 		open('languagecorrelation/static/language_correlation.csv', 'rb'), 
 		delimiter=','
